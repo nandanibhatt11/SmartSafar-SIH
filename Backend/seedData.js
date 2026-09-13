@@ -160,6 +160,7 @@ export const locations = [
     "state": "Uttarakhand",
     "id": "m1",
     "name": "Lal Tibba",
+    "image": "/places/laltibba.webp",
     "type": "famous",
     "category": "Nature & Scenic Viewpoints",
     "density": 58,

@@ -144,8 +144,8 @@ export const OffbeatDestinations = ({
         <h3 className="mb-4 font-display text-xl font-bold">Places to explore</h3>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {popularPlaces.map((dest) => {
-            const crowded = Number(dest.density) >= 70;
-            const alternatives = crowded ? getAlternatives(dest) : [];
+            // const crowded = Number(dest.density) >= 70;
+            // const alternatives = crowded ? getAlternatives(dest) : [];
 
             return (
               <div
@@ -167,7 +167,7 @@ export const OffbeatDestinations = ({
 
                 <p className="mt-2 text-sm leading-5 text-slate-600">{dest.description}</p>
 
-                {crowded && alternatives.length > 0 && (
+                {/* {crowded && alternatives.length > 0 && (
                   <div className="mt-4 rounded-xl border border-emerald-200 bg-emerald-50/70 p-3">
                     <div className="mb-2 text-xs font-bold text-emerald-900">
                       Crowded right now? Try these quieter places:
@@ -176,7 +176,7 @@ export const OffbeatDestinations = ({
                       {alternatives.map(renderAlternative)}
                     </div>
                   </div>
-                )}
+                )} */}
 
                 <div className="mt-4 grid grid-cols-2 gap-2">
                   <button
