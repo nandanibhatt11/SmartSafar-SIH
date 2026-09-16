@@ -67,8 +67,12 @@ export default function App() {
 
       try {
         const [cityResponse, locationsResponse] = await Promise.all([
-          fetch(`${API_BASE_URL}/cities/${encodeURIComponent(selectedDestination)}`),
-          fetch(`${API_BASE_URL}/locations?city=${encodeURIComponent(selectedDestination)}`),
+          fetch(
+            `${API_BASE_URL}/cities/${encodeURIComponent(selectedDestination)}`,
+          ),
+          fetch(
+            `${API_BASE_URL}/locations?city=${encodeURIComponent(selectedDestination)}`,
+          ),
         ]);
 
         if (!cityResponse.ok) throw new Error("Could not load city data");
@@ -94,7 +98,9 @@ export default function App() {
         console.error("Location API error:", err);
         setLocations([]);
         setCityData(null);
-        setError("Unable to load data for this city. Make sure the backend is running on port 5000.");
+        setError(
+          "Unable to load data for this city. Make sure the backend is running on port 5000.",
+        );
       } finally {
         setLoading(false);
       }
@@ -106,13 +112,19 @@ export default function App() {
   const current = cityData || { ...emptyCity, name: selectedDestination };
 
   const categories = useMemo(
-    () => ["All", ...Array.from(new Set(locations.map((d) => d.category).filter(Boolean)))],
-    [locations]
+    () => [
+      "All",
+      ...Array.from(new Set(locations.map((d) => d.category).filter(Boolean))),
+    ],
+    [locations],
   );
 
   const filteredDestinations = useMemo(() => {
     return locations.filter((destination) => {
-      if (selectedCategory !== "All" && destination.category !== selectedCategory) {
+      if (
+        selectedCategory !== "All" &&
+        destination.category !== selectedCategory
+      ) {
         return false;
       }
 
@@ -124,7 +136,11 @@ export default function App() {
   const markers = useMemo(
     () =>
       filteredDestinations
-        .filter((destination) => Number.isFinite(Number(destination.lat)) && Number.isFinite(Number(destination.lng)))
+        .filter(
+          (destination) =>
+            Number.isFinite(Number(destination.lat)) &&
+            Number.isFinite(Number(destination.lng)),
+        )
         .map((destination) => ({
           ...destination,
           crowdPercent: destination.density,
@@ -135,7 +151,7 @@ export default function App() {
                 ? "moderate"
                 : "low",
         })),
-    [filteredDestinations]
+    [filteredDestinations],
   );
 
   const scrollTo = (id) => {
@@ -159,13 +175,19 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#ffffff]">
-      <header className="top-0 z-[1100] border-b border-slate-200 bg-transparent hover:bg-slate-100 backdrop-blur">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-44">
-          <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+      <header className="sticky top-0 z-[1100] border-b border-slate-200 bg-transparent hover:bg-transparent backdrop-blur">
+        <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             <YatraSenseLogo />
           </button>
 
-          <nav className="ml-auto flex items-center gap-10">
+          <nav
+            className={`${
+              mobileOpen ? "flex" : "hidden"
+            } absolute left-0 right-0 top-12 flex-col gap-4 border-b border-slate-200 bg-white px-4 py-4 shadow-md md:static md:ml-auto md:flex md:flex-row md:gap-10 md:border-0 md:bg-transparent md:p-0 md:shadow-none`}
+          >
             <button
               onClick={() => scrollTo("telemetry")}
               className="text-sm font-semibold text-slate-600 hover:text-emerald-700"
@@ -237,7 +259,10 @@ export default function App() {
           />
         </div>
 
-        <section id="live-map" className="border-t border-slate-200 bg-white py-16">
+        <section
+          id="live-map"
+          className="border-t border-slate-200 bg-white py-16"
+        >
           <div className="mx-auto max-w-7xl px-4">
             <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
               <div>
@@ -271,9 +296,9 @@ export default function App() {
       />
 
       <footer className="bg-slate-950 py-7 text-slate-300">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 px-4 md:flex-row md:items-center">
+        <div className="mx-auto flex max-w-4xl flex-col justify-between gap-5 px-4 md:flex-row md:items-center">
           <YatraSenseLogo />
-          <p className="text-sm text-slate-400">
+          <p className="text-xs text-slate-400">
             Travel Smart. Experience More. Avoid the Crowd.
           </p>
         </div>
