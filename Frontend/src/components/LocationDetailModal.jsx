@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Sparkles, ArrowLeft, Home, MapPin, CheckCircle } from "lucide-react";
 
@@ -62,6 +63,7 @@ const LocationDetailModal = ({
               <span className="text-xs font-bold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
                 {selectedStay.kind || "Homestay"}
               </span>
+
               <span
                 className={`text-xs font-bold px-2.5 py-0.5 rounded-full ${
                   selectedStay.density >= 50
@@ -76,6 +78,7 @@ const LocationDetailModal = ({
             <h2 className="text-2xl font-bold text-gray-900">
               {selectedStay.name}
             </h2>
+
             <p className="text-sm text-gray-500 mt-1 flex items-center gap-1">
               <MapPin size={14} /> Near {destination.name},{" "}
               {cityData.state || "Uttarakhand"}
@@ -86,11 +89,13 @@ const LocationDetailModal = ({
                 <p className="text-xs text-emerald-800 font-semibold uppercase">
                   Pricing
                 </p>
+
                 <p className="text-2xl font-extrabold text-emerald-900">
                   ₹{selectedStay.price}
                   <span className="text-xs font-normal"> / night</span>
                 </p>
               </div>
+
               <button
                 onClick={() =>
                   alert(`Booking inquiry sent for ${selectedStay.name}!`)
@@ -105,26 +110,29 @@ const LocationDetailModal = ({
               <h3 className="text-sm font-bold text-gray-800">
                 Stay Highlights
               </h3>
+
               <ul className="text-xs text-gray-600 space-y-2">
                 <li className="flex items-center gap-2">
                   <CheckCircle
                     size={14}
                     className="text-emerald-600 shrink-0"
-                  />{" "}
+                  />
                   Verified local host & Pahadi hospitality
                 </li>
+
                 <li className="flex items-center gap-2">
                   <CheckCircle
                     size={14}
                     className="text-emerald-600 shrink-0"
-                  />{" "}
+                  />
                   Quiet surroundings away from high traffic noise
                 </li>
+
                 <li className="flex items-center gap-2">
                   <CheckCircle
                     size={14}
                     className="text-emerald-600 shrink-0"
-                  />{" "}
+                  />
                   Wi-Fi & power backup available
                 </li>
               </ul>
@@ -151,27 +159,33 @@ const LocationDetailModal = ({
                 : "Quieter Alternative"}
             </span>
 
+            {/* Place Image */}
             {destination?.image && (
               <img
-                src={`http://localhost:5173${destination.image}`}
+                src={destination.image}
                 alt={destination.name}
                 className="w-full h-64 object-cover rounded-xl mt-4"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
               />
             )}
 
             <h2 className="text-2xl font-bold text-gray-900 mt-2">
               {destination.name}
             </h2>
+
             <p className="text-gray-600 text-sm mt-1">
               {destination.description}
             </p>
 
-            {/* nsity Meter */}
+            {/* Density Meter */}
             <div className="my-5 p-4 rounded-xl bg-gray-50 border border-gray-100">
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm font-semibold text-gray-700">
                   Live Crowd Density
                 </span>
+
                 <span
                   className={`text-sm font-bold px-3 py-1 rounded-full ${
                     currentDensity >= 70
@@ -182,9 +196,14 @@ const LocationDetailModal = ({
                   👥 {currentDensity}%
                 </span>
               </div>
+
               <div className="w-full bg-gray-200 rounded-full h-2">
                 <div
-                  className={`h-2 rounded-full ${currentDensity >= 70 ? "bg-red-500" : "bg-emerald-500"}`}
+                  className={`h-2 rounded-full ${
+                    currentDensity >= 70
+                      ? "bg-red-500"
+                      : "bg-emerald-500"
+                  }`}
                   style={{ width: `${currentDensity}%` }}
                 ></div>
               </div>
@@ -193,9 +212,10 @@ const LocationDetailModal = ({
             {/* Homestays Section */}
             <div className="mb-6">
               <h3 className="text-md font-bold text-gray-800 mb-1 flex items-center gap-1.5">
-                <Home size={16} className="text-emerald-700" /> Available
-                Homestays & Stays
+                <Home size={16} className="text-emerald-700" />
+                Available Homestays & Stays
               </h3>
+
               <p className="text-xs text-gray-500 mb-3">
                 Click any stay below to view pricing & details
               </p>
@@ -212,14 +232,17 @@ const LocationDetailModal = ({
                         <p className="font-semibold text-gray-800 text-sm group-hover:text-emerald-800">
                           {stay.name}
                         </p>
+
                         <p className="text-xs text-gray-500">
                           {stay.kind} • {stay.density}% crowd
                         </p>
                       </div>
+
                       <div className="text-right">
                         <span className="text-sm font-bold text-emerald-700">
                           ₹{stay.price}/night
                         </span>
+
                         <p className="text-[10px] text-emerald-600 font-semibold underline">
                           View Details →
                         </p>
@@ -239,29 +262,39 @@ const LocationDetailModal = ({
               <h3 className="text-md font-bold text-gray-800 mb-1">
                 🌿 Less Crowded Alternatives
               </h3>
+
               <p className="text-xs text-gray-500 mb-3">
                 Click any option below to open its location details
               </p>
+
               {alternativeSpots.length > 0 ? (
                 <div className="space-y-2">
                   {alternativeSpots.map((alternativeSpot) => (
                     <div
                       key={alternativeSpot.id}
-                      onClick={() => handleSelectAlternative(alternativeSpot)}
+                      onClick={() =>
+                        handleSelectAlternative(alternativeSpot)
+                      }
                       className="p-4 bg-emerald-50 border border-emerald-200 hover:border-emerald-500 rounded-xl cursor-pointer transition-all hover:shadow-md group"
                     >
                       <div className="flex justify-between items-center mb-1 gap-3">
                         <h4 className="font-bold text-emerald-900 group-hover:underline flex items-center gap-1">
-                          {alternativeSpot.name}{" "}
-                          <Sparkles size={14} className="text-emerald-600" />
+                          {alternativeSpot.name}
+                          <Sparkles
+                            size={14}
+                            className="text-emerald-600"
+                          />
                         </h4>
+
                         <span className="text-xs font-bold text-emerald-800 bg-emerald-200 px-2.5 py-0.5 rounded-full whitespace-nowrap">
                           👥 {alternativeSpot.density}% crowd
                         </span>
                       </div>
+
                       <p className="text-xs text-emerald-700 mt-1">
                         {alternativeSpot.description}
                       </p>
+
                       <span className="inline-block text-[11px] font-bold text-emerald-800 mt-2 underline">
                         Open {alternativeSpot.name} details →
                       </span>
@@ -282,3 +315,4 @@ const LocationDetailModal = ({
 };
 
 export default LocationDetailModal;
+

@@ -2,10 +2,10 @@ export const cities = [
   {
     "name": "Mussoorie",
     "state": "Uttarakhand",
-    "liveDensity": 62,
+    "liveDensity": 72,
     "densityNote": "Moderate — quieter alternatives available",
     "transit": "48%",
-    "weather": "18°C",
+    "weather": "23°C",
     "quietWindow": "6–8 AM",
     "experience": "8.4/10",
     "center": [
@@ -26,7 +26,7 @@ export const cities = [
         "name": "Landour Homestay",
         "kind": "Homestay",
         "price": 1400,
-        "density": 24
+        "density": 64
       },
       {
         "id": "ms3",
@@ -40,7 +40,7 @@ export const cities = [
         "name": "Quiet Valley Guesthouse",
         "kind": "Homestay",
         "price": 1200,
-        "density": 18,
+        "density": 48,
         "alternative": "Better than crowded Mall Road stays"
       }
     ],
@@ -58,7 +58,7 @@ export const cities = [
         "name": "Landour Local Dhaba",
         "kind": "Dhaba",
         "price": 180,
-        "density": 29
+        "density": 59
       },
       {
         "id": "mf3",
@@ -79,7 +79,7 @@ export const cities = [
   {
     "name": "Dehradun",
     "state": "Uttarakhand",
-    "liveDensity": 54,
+    "liveDensity": 64,
     "densityNote": "Moderate — several low-crowd options",
     "transit": "43%",
     "weather": "24°C",
@@ -95,7 +95,7 @@ export const cities = [
         "name": "Clock Tower Hotel",
         "kind": "Hotel",
         "price": 2100,
-        "density": 72,
+        "density": 82,
         "alternative": "Rajpur Road homestays"
       },
       {
@@ -103,21 +103,21 @@ export const cities = [
         "name": "Rajpur Road Homestay",
         "kind": "Homestay",
         "price": 1300,
-        "density": 25
+        "density": 55
       },
       {
         "id": "ds3",
         "name": "Doon Backpackers",
         "kind": "Hostel",
         "price": 650,
-        "density": 28
+        "density": 58
       },
       {
         "id": "ds4",
         "name": "Green Valley Stay",
         "kind": "Homestay",
         "price": 1100,
-        "density": 16
+        "density": 36
       }
     ],
     "food": [
@@ -134,14 +134,14 @@ export const cities = [
         "name": "Doon Pahadi Dhaba",
         "kind": "Dhaba",
         "price": 170,
-        "density": 27
+        "density": 47
       },
       {
         "id": "df3",
         "name": "Rajpur Local Kitchen",
         "kind": "Local Food",
         "price": 240,
-        "density": 22
+        "density": 52
       },
       {
         "id": "df4",
@@ -166,7 +166,7 @@ export const locations = [
     "density": 58,
     "lat": 30.4548,
     "lng": 78.1026,
-    "price": 300,
+    "price": 700,
     "description": "Mussoorie's highest point in Landour, known for Himalayan panoramas, telescope views, and cool air.",
     "alternatives": [
       "Gun Hill",
@@ -185,7 +185,7 @@ export const locations = [
     "density": 78,
     "lat": 30.4633,
     "lng": 78.0675,
-    "price": 500,
+    "price": 700,
     "description": "A 360° viewpoint over the Doon Valley and Himalayas, reached by a short ropeway ride.",
     "alternatives": [
       "Lal Tibba",
@@ -201,10 +201,10 @@ export const locations = [
      "image": "/places/cloudend.webp",
     "type": "famous",
     "category": "Nature & Scenic Viewpoints",
-    "density": 28,
+    "density": 58,
     "lat": 30.4259,
     "lng": 78.0215,
-    "price": 300,
+    "price": 600,
     "description": "Dense deodar forest at the end of the Mussoorie ridge, ideal for peaceful walks and a digital-detox feel.",
     "alternatives": [
       "Benog Wildlife Sanctuary",
@@ -223,7 +223,7 @@ export const locations = [
     "density": 64,
     "lat": 30.4067,
     "lng": 78.0799,
-    "price": 400,
+    "price": 1000,
     "description": "An artificial lake on the Dehradun–Mussoorie road with paddle boating and relaxed views.",
     "alternatives": [
       "Company Garden",
@@ -242,7 +242,7 @@ export const locations = [
     "density": 67,
     "lat": 30.4678,
     "lng": 78.0406,
-    "price": 350,
+    "price": 650,
     "description": "Flower beds, nursery, paddle boating, and a family-friendly garden setting.",
     "alternatives": [
       "Mussoorie Lake",
@@ -260,7 +260,7 @@ export const locations = [
     "density": 91,
     "lat": 30.4924,
     "lng": 78.0206,
-    "price": 400,
+    "price": 600,
     "description": "Iconic multi-tier waterfall with natural pools, ropeway access, and picnic activity.",
     "alternatives": [
       "Bhatta Falls",
@@ -276,10 +276,10 @@ export const locations = [
     "name": "Bhatta Falls",
     "type": "alternative",
     "category": "Waterfalls & Picnic Spots",
-    "density": 27,
+    "density": 37,
     "lat": 30.4142,
     "lng": 78.0756,
-    "price": 250,
+    "price": 550,
     "description": "A quieter waterfall option with natural pools and a less commercial atmosphere.",
     "alternatives": [
       "Kempty Falls"
@@ -295,7 +295,7 @@ export const locations = [
     "density": 22,
     "lat": 30.3928,
     "lng": 78.0825,
-    "price": 250,
+    "price": 450,
     "description": "A peaceful forest-setting waterfall reached by a short trek.",
     "alternatives": [
       "Kempty Falls",
@@ -312,7 +312,7 @@ export const locations = [
     "density": 18,
     "lat": 30.4355,
     "lng": 78.0378,
-    "price": 300,
+    "price": 400,
     "description": "A quiet moss-covered waterfall experience away from the busiest tourist spots.",
     "alternatives": [
       "Kempty Falls",
@@ -329,7 +329,7 @@ export const locations = [
     "density": 14,
     "lat": 30.4359,
     "lng": 78.0915,
-    "price": 300,
+    "price": 500,
     "description": "A lesser-known stream-and-falls option in a nature-reserve setting.",
     "alternatives": [
       "Kempty Falls"
@@ -346,7 +346,7 @@ export const locations = [
     "density": 24,
     "lat": 30.4118,
     "lng": 78.0067,
-    "price": 500,
+    "price": 800,
     "description": "Moderate trek through deodar forests with birdwatching and Himalayan views.",
     "alternatives": [
       "Bhadraj Temple Trek",
@@ -365,7 +365,7 @@ export const locations = [
     "density": 38,
     "lat": 30.4597,
     "lng": 78.0308,
-    "price": 200,
+    "price": 700,
     "description": "Historic ruins, ridge views, and a short forest walk near Hathipaon.",
     "alternatives": [
       "Cloud’s End",
@@ -384,7 +384,7 @@ export const locations = [
     "density": 49,
     "lat": 30.4536,
     "lng": 78.0758,
-    "price": 1200,
+    "price": 1600,
     "description": "Outdoor adventure activities such as zip-lining and rappelling.",
     "alternatives": [
       "Camel’s Back Road",
@@ -402,7 +402,7 @@ export const locations = [
     "density": 52,
     "lat": 30.459,
     "lng": 78.0715,
-    "price": 200,
+    "price": 890,
     "description": "A scenic 2–3 km walk and ride route with a camel-shaped rock formation and sunset views.",
     "alternatives": [
       "Landour Walks",
@@ -436,7 +436,7 @@ export const locations = [
     "density": 17,
     "lat": 30.374,
     "lng": 77.994,
-    "price": 500,
+    "price": 900,
     "description": "A scenic hill trek combining views with the Bhadraj Temple.",
     "alternatives": [
       "Benog Tibba",
@@ -453,7 +453,7 @@ export const locations = [
     "density": 16,
     "lat": 30.457,
     "lng": 78.091,
-    "price": 150,
+    "price": 450,
     "description": "A quieter walking option through Landour's forested lanes.",
     "alternatives": [
       "Camel’s Back Road",
@@ -471,7 +471,7 @@ export const locations = [
     "density": 23,
     "lat": 30.4541,
     "lng": 78.0785,
-    "price": 100,
+    "price": 400,
     "description": "A scenic and peaceful serpent-deity temple near Camel’s Back Road.",
     "alternatives": [
       "Local Shiva / Nag Temples",
@@ -489,7 +489,7 @@ export const locations = [
     "density": 25,
     "lat": 30.4108,
     "lng": 78.008,
-    "price": 300,
+    "price": 500,
     "description": "A hilltop temple dedicated to a form of Goddess Durga, with forest views and a short trek.",
     "alternatives": [
       "Surkanda Devi",
@@ -508,7 +508,7 @@ export const locations = [
     "density": 19,
     "lat": 30.4487,
     "lng": 78.0472,
-    "price": 100,
+    "price": 600,
     "description": "A peaceful Tibetan Buddhist temple in Happy Valley with prayer flags and a meditation atmosphere.",
     "alternatives": [
       "Radha-Krishna Mandir",
@@ -525,7 +525,7 @@ export const locations = [
     "density": 17,
     "lat": 30.374,
     "lng": 77.994,
-    "price": 300,
+    "price": 800,
     "description": "Hilltop temple dedicated to Bal Bhadra, combining spirituality, trekking, and views.",
     "alternatives": [
       "Surkanda Devi",
@@ -542,7 +542,7 @@ export const locations = [
     "density": 35,
     "lat": 30.4149,
     "lng": 78.3187,
-    "price": 800,
+    "price": 1000,
     "description": "A panoramic temple-and-trek option near Dhanaulti.",
     "alternatives": [
       "Jwala Devi",
@@ -559,7 +559,7 @@ export const locations = [
     "density": 15,
     "lat": 30.39,
     "lng": 78.22,
-    "price": 500,
+    "price": 950,
     "description": "A quieter local spiritual option associated with the same genre as Jwala Devi.",
     "alternatives": [
       "Jwala Devi"
@@ -575,7 +575,7 @@ export const locations = [
     "density": 14,
     "lat": 30.475,
     "lng": 78.034,
-    "price": 100,
+    "price": 1000,
     "description": "A simple local Shiva temple noted as an alternative spiritual stop.",
     "alternatives": [
       "Nag Devta Temple"
@@ -591,7 +591,7 @@ export const locations = [
     "density": 31,
     "lat": 30.459,
     "lng": 78.066,
-    "price": 100,
+    "price": 600,
     "description": "A central local temple offering a quieter alternative to busier tourist sites.",
     "alternatives": [
       "Shedup Choepelling Temple"
@@ -607,7 +607,7 @@ export const locations = [
     "density": 48,
     "lat": 30.4623,
     "lng": 78.0641,
-    "price": 100,
+    "price": 700,
     "description": "Historic Anglican church in the Mall Road area, suited to heritage-focused visits.",
     "alternatives": [
       "Shedup Choepelling Temple"
@@ -623,7 +623,7 @@ export const locations = [
     "density": 84,
     "lat": 30.4598,
     "lng": 78.0667,
-    "price": 1200,
+    "price": 1600,
     "description": "Bustling colonial-era promenade for strolling, people-watching, food, shopping, and sunset.",
     "alternatives": [
       "Landour",
@@ -641,7 +641,7 @@ export const locations = [
     "density": 24,
     "lat": 30.4545,
     "lng": 78.09,
-    "price": 500,
+    "price": 900,
     "description": "Quiet colonial cantonment with old bungalows, churches, Lal Tibba, and Char Dukan.",
     "alternatives": [
       "Mall Road",
@@ -658,7 +658,7 @@ export const locations = [
     "density": 20,
     "lat": 30.454,
     "lng": 78.095,
-    "price": 300,
+    "price": 1500,
     "description": "A quieter Landour shopping lane known for local preserves, cheese, and small artisan shops.",
     "alternatives": [
       "Mall Road"
@@ -707,7 +707,7 @@ export const locations = [
     "density": 21,
     "lat": 30.4205,
     "lng": 78.24,
-    "price": 900,
+    "price": 2000,
     "description": "Forest-and-eco-park destination with a quieter hill experience.",
     "alternatives": [
       "Kanatal",
@@ -724,7 +724,7 @@ export const locations = [
     "density": 17,
     "lat": 30.4165,
     "lng": 78.327,
-    "price": 1200,
+    "price": 1700,
     "description": "A quieter forested hill destination suited to nature and peaceful stays.",
     "alternatives": [
       "Dhanaulti",
@@ -758,7 +758,7 @@ export const locations = [
     "density": 32,
     "lat": 30.3784,
     "lng": 78.48,
-    "price": 2200,
+    "price": 2700,
     "description": "A larger nature and adventure option around the Tehri reservoir.",
     "alternatives": [
       "Kanatal",
@@ -775,7 +775,7 @@ export const locations = [
     "density": 82,
     "lat": 30.3715,
     "lng": 78.0236,
-    "price": 500,
+    "price": 900,
     "description": "A limestone river cave and gorge where a stream disappears underground and reappears, with easy wading adventure.",
     "alternatives": [
       "Maldevta",
@@ -794,7 +794,7 @@ export const locations = [
     "density": 76,
     "lat": 30.3872,
     "lng": 78.131,
-    "price": 500,
+    "price": 800,
     "description": "Sulphur-rich springs, limestone cascades, caves, ropeway, and valley views.",
     "alternatives": [
       "Maldevta",
@@ -813,7 +813,7 @@ export const locations = [
     "density": 62,
     "lat": 30.2155,
     "lng": 78.0935,
-    "price": 400,
+    "price": 700,
     "description": "Sal forest picnic area with pools, streams, and birdwatching, suited to a family-friendly outing.",
     "alternatives": [
       "Maldevta",
@@ -831,7 +831,7 @@ export const locations = [
     "density": 20,
     "lat": 30.301,
     "lng": 78.146,
-    "price": 300,
+    "price": 600,
     "description": "Riverside Song Valley setting with streams and seasonal waterfalls.",
     "alternatives": [
       "Robber’s Cave",
@@ -849,7 +849,7 @@ export const locations = [
     "density": 17,
     "lat": 30.4002,
     "lng": 78.121,
-    "price": 300,
+    "price": 600,
     "description": "A quieter cascade reached through a village-and-forest trail.",
     "alternatives": [
       "Robber’s Cave",
@@ -866,7 +866,7 @@ export const locations = [
     "density": 12,
     "lat": 30.282,
     "lng": 78.174,
-    "price": 250,
+    "price": 850,
     "description": "A very secluded cascade beyond Maldevta.",
     "alternatives": [
       "Robber’s Cave",
@@ -883,7 +883,7 @@ export const locations = [
     "density": 15,
     "lat": 30.255,
     "lng": 78.16,
-    "price": 250,
+    "price": 1550,
     "description": "Dense sal forests and quiet walking loops for a slower nature experience.",
     "alternatives": [
       "Lachhiwala Nature Park",
@@ -900,7 +900,7 @@ export const locations = [
     "density": 19,
     "lat": 30.454,
     "lng": 77.671,
-    "price": 300,
+    "price": 1300,
     "description": "A peaceful Ramsar wetland suited to birdwatching and quiet views.",
     "alternatives": [
       "Sahastradhara",
@@ -917,7 +917,7 @@ export const locations = [
     "density": 45,
     "lat": 30.066,
     "lng": 78.3,
-    "price": 1500,
+    "price": 2000,
     "description": "Wildlife safari destination for spotting elephants, deer, and potentially larger wildlife.",
     "alternatives": [
       "Kipling Trail",
@@ -936,7 +936,7 @@ export const locations = [
     "density": 13,
     "lat": 30.398,
     "lng": 78.074,
-    "price": 250,
+    "price": 750,
     "description": "An old colonial path from Rajpur toward Jharipani, scenic and often quiet on weekdays.",
     "alternatives": [
       "Rajaji National Park"
@@ -952,7 +952,7 @@ export const locations = [
     "density": 12,
     "lat": 30.335,
     "lng": 78.151,
-    "price": 300,
+    "price": 1300,
     "description": "A moderate ridge walk with valley views.",
     "alternatives": [
       "Rajaji National Park",
@@ -969,7 +969,7 @@ export const locations = [
     "density": 11,
     "lat": 30.32,
     "lng": 78.12,
-    "price": 350,
+    "price": 1000,
     "description": "A longer historical trail option around Nalapani and Kalanga Hill.",
     "alternatives": [
       "Rajaji National Park",
@@ -1003,7 +1003,7 @@ export const locations = [
     "density": 35,
     "lat": 30.27,
     "lng": 77.995,
-    "price": 200,
+    "price": 500,
     "description": "A large Tibetan Buddhist complex in Clement Town with a tall stupa, prayer halls, gardens, and Tibetan culture.",
     "alternatives": [
       "Kalsi",
@@ -1021,7 +1021,7 @@ export const locations = [
     "density": 58,
     "lat": 30.33,
     "lng": 78.031,
-    "price": 150,
+    "price": 350,
     "description": "An ancient cave temple where natural water drips continuously onto the Shivalinga.",
     "alternatives": [
       "Kalsi",
@@ -1039,7 +1039,7 @@ export const locations = [
     "density": 16,
     "lat": 30.525,
     "lng": 77.82,
-    "price": 500,
+    "price": 900,
     "description": "An Ashokan Rock Edict site with a quiet Yamuna riverside village setting.",
     "alternatives": [
       "Mindrolling Monastery / Great Stupa",
@@ -1056,7 +1056,7 @@ export const locations = [
     "density": 14,
     "lat": 30.305,
     "lng": 78.05,
-    "price": 150,
+    "price": 550,
     "description": "Smaller, lesser-visited temples associated with the Char Sidh circuit.",
     "alternatives": [
       "Mindrolling Monastery / Great Stupa",
@@ -1073,7 +1073,7 @@ export const locations = [
     "density": 12,
     "lat": 30.325,
     "lng": 78.025,
-    "price": 100,
+    "price": 500,
     "description": "Quiet local cave-shrine options around the Tapkeshwar area.",
     "alternatives": [
       "Tapkeshwar Mahadev Temple"
@@ -1089,7 +1089,7 @@ export const locations = [
     "density": 10,
     "lat": 30.28,
     "lng": 78.155,
-    "price": 100,
+    "price": 700,
     "description": "Simple local village shrines offering a quieter spiritual experience.",
     "alternatives": [
       "Tapkeshwar Mahadev Temple"
@@ -1105,7 +1105,7 @@ export const locations = [
     "density": 61,
     "lat": 30.342,
     "lng": 77.9963,
-    "price": 1000,
+    "price": 1500,
     "description": "Iconic colonial Greco-Roman campus with botanical gardens, museums, and tree-lined avenues.",
     "alternatives": [
       "Kipling Trail",
@@ -1123,7 +1123,7 @@ export const locations = [
     "density": 72,
     "lat": 30.3256,
     "lng": 78.0437,
-    "price": 300,
+    "price": 600,
     "description": "A central city landmark and meeting point surrounded by Dehradun's urban life.",
     "alternatives": [
       "Thano Village",
@@ -1140,7 +1140,7 @@ export const locations = [
     "density": 20,
     "lat": 30.316,
     "lng": 78.12,
-    "price": 250,
+    "price": 650,
     "description": "Quieter stretches around Raipur and Nalapani with historical and local character.",
     "alternatives": [
       "Clock Tower (Ghanta Ghar)",
@@ -1157,7 +1157,7 @@ export const locations = [
     "density": 15,
     "lat": 30.255,
     "lng": 78.16,
-    "price": 250,
+    "price": 750,
     "description": "A rural cultural setting with forests and a slower local feel.",
     "alternatives": [
       "Clock Tower (Ghanta Ghar)",
@@ -1174,7 +1174,7 @@ export const locations = [
     "density": 26,
     "lat": 30.3604,
     "lng": 78.0722,
-    "price": 300,
+    "price": 700,
     "description": "Family-friendly park area on Mussoorie Road with deer, birds, and other animals.",
     "alternatives": [
       "Asan Barrage",
@@ -1192,7 +1192,7 @@ export const locations = [
     "density": 15,
     "lat": 30.255,
     "lng": 78.16,
-    "price": 250,
+    "price": 750,
     "description": "Quiet forests suited to birds and casual nature observation.",
     "alternatives": [
       "Malsi Deer Park / Dehradun Zoo Area"
@@ -1208,7 +1208,7 @@ export const locations = [
     "density": 20,
     "lat": 30.301,
     "lng": 78.146,
-    "price": 300,
+    "price": 600,
     "description": "Riverside setting for casual wildlife and nature sightings.",
     "alternatives": [
       "Malsi Deer Park / Dehradun Zoo Area",
@@ -1225,7 +1225,7 @@ export const locations = [
     "density": 80,
     "lat": 30.324,
     "lng": 78.043,
-    "price": 500,
+    "price": 600,
     "description": "City shopping hub for Basmati rice, spices, woolens, handicrafts, and street food.",
     "alternatives": [
       "Tibetan Market",
@@ -1242,7 +1242,7 @@ export const locations = [
     "density": 68,
     "lat": 30.328,
     "lng": 78.041,
-    "price": 500,
+    "price": 700,
     "description": "Market near Parade Ground for woolens, jackets, handicrafts, jewellery, and Tibetan snacks.",
     "alternatives": [
       "Rajpur Road / Astley Hall"
@@ -1258,7 +1258,7 @@ export const locations = [
     "density": 55,
     "lat": 30.349,
     "lng": 78.079,
-    "price": 1000,
+    "price": 2000,
     "description": "Modern shopping and café area with bookshops, bakeries, and clothing.",
     "alternatives": [
       "Tibetan Market",
@@ -1275,7 +1275,7 @@ export const locations = [
     "density": 82,
     "lat": 30.325,
     "lng": 78.043,
-    "price": 250,
+    "price": 450,
     "description": "Local food area for bun-tikki, chaat, and classic street food.",
     "alternatives": [
       "Rajpur Local Eateries",
@@ -1293,7 +1293,7 @@ export const locations = [
     "density": 63,
     "lat": 30.329,
     "lng": 78.06,
-    "price": 400,
+    "price": 700,
     "description": "Tibetan and Chinese food option known for momos and thukpa.",
     "alternatives": [
       "Amdo Samdup",
@@ -1310,7 +1310,7 @@ export const locations = [
     "density": 45,
     "lat": 30.27,
     "lng": 77.995,
-    "price": 350,
+    "price": 850,
     "description": "Tibetan food option near Mindrolling with momos and thukpa.",
     "alternatives": [
       "Kalsang",
@@ -1327,7 +1327,7 @@ export const locations = [
     "density": 58,
     "lat": 30.35,
     "lng": 78.079,
-    "price": 300,
+    "price": 600,
     "description": "Bakery stop for classic pastries and rusks around Rajpur Road.",
     "alternatives": [
       "Rajpur Local Eateries"
@@ -1343,7 +1343,7 @@ export const locations = [
     "density": 22,
     "lat": 30.349,
     "lng": 78.079,
-    "price": 250,
+    "price": 750,
     "description": "Quieter local eating options along Rajpur Road.",
     "alternatives": [
       "Kalsang",
@@ -1360,7 +1360,7 @@ export const locations = [
     "density": 50,
     "lat": 30.349,
     "lng": 78.079,
-    "price": 700,
+    "price": 800,
     "description": "Multi-cuisine city dining option mentioned among Dehradun highlights.",
     "alternatives": [
       "Rajpur Local Eateries"
@@ -1376,7 +1376,7 @@ export const locations = [
     "density": 47,
     "lat": 30.349,
     "lng": 78.079,
-    "price": 800,
+    "price": 1000,
     "description": "Multi-cuisine dining option on the Rajpur Road side.",
     "alternatives": [
       "Rajpur Local Eateries"
@@ -1392,7 +1392,7 @@ export const locations = [
     "density": 43,
     "lat": 30.349,
     "lng": 78.079,
-    "price": 650,
+    "price": 950,
     "description": "Multi-cuisine dining option mentioned among Rajpur Road food choices.",
     "alternatives": [
       "Rajpur Local Eateries"
@@ -1408,7 +1408,7 @@ export const locations = [
     "density": 40,
     "lat": 30.349,
     "lng": 78.079,
-    "price": 600,
+    "price": 1000,
     "description": "Food option noted for Uttarakhandi cuisine around Rajpur Road.",
     "alternatives": [
       "Rajpur Local Eateries"
