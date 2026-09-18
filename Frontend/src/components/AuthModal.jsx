@@ -106,8 +106,8 @@ export default function AuthModal({ onClose, onLogin }) {
           setSuccess("");
         }, 1200);
       } else {
-        localStorage.setItem("yatrasenseToken", result.token);
-        localStorage.setItem("yatrasenseUser", JSON.stringify(result.user));
+        localStorage.setItem("SmartSafarToken", result.token);
+        localStorage.setItem("SmartSafarUser", JSON.stringify(result.user));
 
         onLogin(result.user);
         onClose();
@@ -149,7 +149,7 @@ export default function AuthModal({ onClose, onLogin }) {
 
           <p className="mt-1 text-sm text-slate-600">
             {mode === "login"
-              ? "Login to continue your YatraSense journey."
+              ? "Login to continue your SmartSafar journey."
               : "Create an account to personalize your travel experience."}
           </p>
         </div>

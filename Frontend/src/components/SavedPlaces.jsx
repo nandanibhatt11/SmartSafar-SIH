@@ -26,7 +26,7 @@ export const SavedPlaces = ({
         return;
       }
 
-      const token = localStorage.getItem("yatrasenseToken");
+      const token = localStorage.getItem("SmartSafarToken");
 
       if (!token) {
         setSavedPlaces([]);
@@ -62,7 +62,7 @@ export const SavedPlaces = ({
   }, [user]);
 
   const handleRemove = async (locationId) => {
-    const token = localStorage.getItem("yatrasenseToken");
+    const token = localStorage.getItem("SmartSafarToken");
 
     if (!token) return;
 

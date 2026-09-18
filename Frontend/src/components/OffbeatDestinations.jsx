@@ -86,7 +86,7 @@ export const OffbeatDestinations = ({
         return;
       }
 
-      const token = localStorage.getItem("yatrasenseToken");
+      const token = localStorage.getItem("SmartSafarToken");
 
       if (!token) {
         setSavedPlaces([]);
@@ -140,7 +140,7 @@ export const OffbeatDestinations = ({
       return;
     }
 
-    const token = localStorage.getItem("yatrasenseToken");
+    const token = localStorage.getItem("SmartSafarToken");
 
     if (!token) {
       onRequireLogin && onRequireLogin();

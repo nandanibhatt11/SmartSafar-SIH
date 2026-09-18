@@ -1,4 +1,4 @@
-# YatraSense — SIH React + Vite + Tailwind
+# SmartSafar — SIH React + Vite + Tailwind
 
 A ready-to-run conversion of the supplied TypeScript/React UI into JavaScript React components using Vite, Tailwind CSS, Lucide icons and Leaflet.
 
@@ -25,7 +25,7 @@ npm run build
 - `src/components/OffbeatDestinations.jsx`
 - `src/components/LiveCrowdMap.jsx`
 - `src/components/StudentPlanner.jsx`
-- `src/components/YatraSenseLogo.jsx`
+- `src/components/SmartSafarlogo.jsx`
 - `src/index.css`
 - `src/main.jsx`
 

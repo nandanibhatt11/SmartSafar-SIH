@@ -24,7 +24,7 @@ app.use("/api/auth", authRoutes);
 app.get("/api/health", (req, res) => {
   res.json({
     success: true,
-    message: "YatraSense API is running",
+    message: "SmartSafar API is running",
   });
 });
 
@@ -55,7 +55,7 @@ async function startServer() {
 
     app.listen(PORT, "0.0.0.0", () => {
       console.log(
-        `YatraSense API running on http://localhost:${PORT}`
+        `SmartSafar API running on http://localhost:${PORT}`
       );
       console.log(
         `Network access: http://172.20.138.23:${PORT}`

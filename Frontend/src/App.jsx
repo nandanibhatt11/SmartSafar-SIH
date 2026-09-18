@@ -8,7 +8,7 @@ import {
   Heart,
 } from "lucide-react";
 
-import { YatraSenseLogo } from "./components/YatraSenseLogo";
+import { SmartSafarlogo } from "./components/SmartSafarlogo";
 import { HeroSection } from "./components/HeroSection";
 import { TelemetrySection } from "./components/TelemetrySection";
 import { OffbeatDestinations } from "./components/OffbeatDestinations";
@@ -39,7 +39,7 @@ export default function App() {
 
   const [user, setUser] = useState(() => {
     try {
-      const savedUser = localStorage.getItem("yatrasenseUser");
+      const savedUser = localStorage.getItem("SmartSafarUser");
       return savedUser ? JSON.parse(savedUser) : null;
     } catch {
       return null;
@@ -92,7 +92,7 @@ export default function App() {
         console.error("City API error:", err);
 
         setError(
-          "Unable to connect to the YatraSense backend."
+          "Unable to connect to the SmartSafar backend."
         );
       }
     };
@@ -318,8 +318,8 @@ export default function App() {
   // =========================================================
 
   const handleLogout = () => {
-    localStorage.removeItem("yatrasenseToken");
-    localStorage.removeItem("yatrasenseUser");
+    localStorage.removeItem("SmartSafarToken");
+    localStorage.removeItem("SmartSafarUser");
 
     setUser(null);
     setShowProfile(false);
@@ -419,7 +419,7 @@ export default function App() {
             type="button"
             onClick={backToHome}
           >
-            <YatraSenseLogo />
+            <SmartSafarlogo />
           </button>
 
           {/* =================================================
@@ -872,7 +872,7 @@ export default function App() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6">
 
           <div className="flex shrink-0 items-center">
-            <YatraSenseLogo />
+            <SmartSafarlogo />
           </div>
 
           <p className="text-xs text-slate-400">

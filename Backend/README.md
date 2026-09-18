@@ -1,6 +1,6 @@
-# YatraSense Backend
+# SmartSafar Backend
 
-Node.js + Express + MongoDB REST API for the existing YatraSense frontend.
+Node.js + Express + MongoDB REST API for the existing SmartSafar frontend.
 
 ## 1. Install
 
